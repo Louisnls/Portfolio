@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio de Louis Vidal</title>
+  <link rel="shortcut icon" href="./asset/itic.jpg" type="image/x-icon">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <div class="page-container">
+
+  <div class="container">
+    
+    <div class="header align-items-center justify-content-center">
+      
+      <div class="row">
+       
+        <div class="menu col-6">
+          <div class="text col-12">
+            <div class="top_text">
+              <span>Salut, je suis </span>
+            </div>
+            <div class="center_text">
+              <span>Louis Vidal</span>
+            </div>
+            <div class="bottom_text">
+              <span>Etudiant en BTS SIO</span>
+            </div>
+            
+            
+            <div class="my_info">
+              <a href="asset/Louis_Vidal_CV.pdf" download="Louis_Vidal_CV.pdf">
+                <button class="btn">Télécharger CV<i class="fas fa-arrow-down"></i></button>
+              </a>
+
+            </div> 
+            
+          </div>
+          
+        
+        </div>
+        
+        <div class="photo_frame col-5">
+           <div class="photo">
+             <img src="./asset/moi.jpg">
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    
+    <div class="about_me">
+      <div class="title">
+        <h2>À propos de moi</h2>
+      </div>
+      
+      <div class="row">
+        <div class="about_text col-md-8">
+          <span>
+            Etudiant en deuxième année de BTS SIO, j'ai mis à profit ma rigueur et mon sérieux dans ma passion pour l'informatique. Je vous présente donc ici mon portfolio, partageant mon parcours et mes réalisations pendant ces deux années. 
+          </span>
+          <div class="my_info">
+                <a href="asset/Louis_Vidal_CV.pdf" download="Louis_Vidal_CV.pdf">
+                  <button class="btn">Télécharger CV<i class="fas fa-arrow-down"></i></button>
+                </a>
+          </div>
+       </div>
+
+      </div>
+      
+    </div>
+    
+    
+    <div class="my_skills">
+      <div class="title">
+        <h2>Mes compétences</h2>
+      </div>
+      
+      <div class="row col-12">
+        
+        <div class="skill col-4">
+          <div class="skill_body">
+            <div class="row">
+              <div class="image col-2">
+                <img style="padding: 9px;" src="./asset/réseau.png">
+              </div>
+              <div class="title col-9" style="margin-top: auto; margin-bottom: auto;">
+                <h4>Réseau</h4>
+              </div>
+              <div class="desc col-12">
+                Cisco, Mikrotik, Sécurité, VLAN, RIP, OSPF, ACL, HSRP, VPN
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="skill col-4">
+          <div class="skill_body">
+            <div class="row">
+              <div class="image col-2">
+                <img style="padding: 2px;" src="./asset/infra.png">
+              </div>
+              <div class="title col-9" style="margin-top: auto; margin-bottom: auto;">
+                <h4>Infrastructure</h4>
+              </div>
+              <div class="desc col-12">
+                Windows Serveur, Active Directory, OCS Inventory, GLPI, Zabbix, Samba, Pxe, VmWare, Proxmox, IDS/IPS
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="skill col-4">
+          <div class="skill_body">
+            <div class="row">
+              <div class="image col-2">
+                <img src="./asset/dev.png">
+              </div>
+              <div class="title col-9" style="margin-top: auto; margin-bottom: auto;">
+                <h4>Développement</h4>
+              </div>
+              <div class="desc col-12">
+                Html, CSS, Javascript, Powershell, MySQL, MariaDB
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="works col-12">
+      <div class="title">
+        <h2>Mon Portfolio</h2>
+      </div>
+      
+      <div class="labels">
+        <div class="row col-lg-12 col-sm-12">
+          <div class="label col">
+            <span class="label_name all current" id="reseau" onclick="load('reseau')">
+              Réseau
+            </span>
+            <span class="label_count" id="all_label_count">
+              6
+            </span>
+          </div>
+          
+          <div class="label col">
+            <span class="label_name" id="infra" onclick="load('infra')">
+              Infra/Système
+            </span>
+            <span class="label_count" id="app_label_count">
+              6
+            </span>
+          </div>
+          
+          <div class="label col">
+            <span class="label_name" id="dev" onclick="load('dev')">
+              Développement
+            </span>
+            <span class="label_count" id="template_label_count">
+              2
+            </span>
+          </div>
+          <div class="label col">
+            <span class="label_name" id="certif" onclick="load('certif')">
+              Certifications
+            </span>
+            <span class="label_count" id="ml_label_count">
+              2
+            </span>
+          </div>
+          <div class="label col">
+            <span class="label_name" id="E5" onclick="load('E5')">
+              Épreuve E5
+            </span>
+            <span class="label_count" id="ml_label_count">
+              2
+            </span>
+          </div>
+          <div class="label col">
+            <span class="label_name" id="entreprise" onclick="load('entreprise')">
+              Entreprise
+            </span>
+            <span class="label_count" id="app_label_count">
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="display_box" id="display_box">
+        <div class="display_menu col-12">
+
+          
+        </div>
+        
+        <div class="projects_holder col-12">
+          <div class="row" id="projects_holder">
+            
+          </div> 
+          
+
+          <div class="load_more_buttons" id="load_more"></div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+    
+
+   
+    <div class="get_in_touch col-12">
+      <div class="title">
+        <h2>Veille Technologique</h2>
+      </div>
+      <div id="veille_section" class="labels">
+        <div class="about_text col-md-12">
+          <span>
+            La veille technologique consiste à surveiller les évolutions technologiques et les innovations dans des domaines d'activité spécifiques. La surveillance technique implique le suivi, la collecte, le partage et la diffusion d'informations dans le but de les analyser pour révéler des tendances et des corrélations. L'analyse des données collectées permet de prédire et de comprendre les changements dans la recherche et le développement.
+          </span>
+          <h5>La réalité augmentée : qu'est-ce que c'est ?</h5>
+          <span>
+            La réalité augmentée est une technologie qui permet d’intégrer des éléments virtuels (images, vidéos, informations) en temps réel au sein d’un environnement réel. Le principe est de combiner le virtuel et le réel et donner l’illusion d’une intégration parfaite à l’utilisateur.
+          </span>
+          <h5>La prise d'information</h5>
+          <span>
+            Dans un domaine où l'évolution ne cesse, il est important de se garder informer continuellement. Pour ce faire, j'utilise Feedly, qui me permet de suivre des sujets et ainsi m'informer en permanence. Voici ci-dessous, certains sites qui m'aident dans ma quête d'informations :
+          </span>
+        </div>
+        <div class="row" id="veille_holder">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+
+
+
+<div class="contact col-12">
+  <div class="title">
+      <h2>Contact</h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 contact-form-container" style="margin-top: 20px;">
+      <section class="follow-container">
+        <div class="socials">
+          <div class="button">
+            <a href="https://github.com/louisnls" target="_blank">
+            <div class="icon">
+                 <i class="fab fa-github"></i>
+             </div>
+             <span>GitHub</span>
+            </a>
+          </div>
+          
+          <div class="button">
+            <a href="https://www.linkedin.com/in/louisvidal93" target="_blank">
+            <div class="icon">
+                 <i class="fab fa-linkedin"></i>
+             </div>
+             <span>LinkedIn</span>
+            </a>
+          </div>
+          
+          <div class="button dark-mode-button" role="buton">
+            <div class="icon">
+                 <i class="fas fa-moon"></i>
+             </div>
+             <span>Dark mode</span>
+            </a>
+          </div>
+ 
+      </section>
+    </div>
+
+    <div class="col-md-6">
+      <form id="contact_form" method="post" action="mail.php">
+          <div id="contact_name" class="form-group">
+              <label for="contact_name" class="sr-only">Votre nom</label>
+              <input type="text" name="contact_name" class="form-control" placeholder="Votre nom" required autofocus>
+          </div>
+          <div class="form-group">
+              <label for="inputEmail" class="sr-only">Votre e-mail</label>
+              <input type="email" name="inputEmail" class="form-control" placeholder="Votre e-mail" required autofocus>
+          </div>
+          <textarea name="message" class="form-control" placeholder="Comment puis-je vous aider ?" required autofocus></textarea>
+          <button type="submit" class="btn btn-default">Envoyer</button>
+      </form>    
+  </div>
+  </div>
+</div>
+
+
+
+
+
+</div>
+<div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+
+
+
+
+
+ 
+  
+  <div class="footer">
+    © Copyright 
+  </div>
+
+  <script  src="./script.js"></script>
+ 
+
+
+
+
+  
+
+
+</body>
+</html>
